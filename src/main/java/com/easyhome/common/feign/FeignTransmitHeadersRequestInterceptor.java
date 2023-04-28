@@ -37,7 +37,6 @@ public class FeignTransmitHeadersRequestInterceptor implements RequestIntercepto
             if (log.isInfoEnabled() && GrayscaleConstant.STR_BOOLEAN_TRUE.equals(printLogFlg)) {
                 requestTemplate.header(GrayscaleConstant.PRINT_HEADER_LOG_KEY, printLogFlg);
                 log.info("feign传递请求头信息:{}={}", GrayscaleConstant.HEADER_KEY, version);
-                log.info("feign传递请求头信息:{}={}", GrayscaleConstant.USER_ID, userId);
             }
         }
     }
